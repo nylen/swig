@@ -1,0 +1,20 @@
+{
+    "name": "swig-gh-pages",
+    "version": "0.4.0",
+    "description": "Site for Swig",
+    "keywords": ["template", "html", "django", "sandbox"],
+    "repository": "git://github.com/paularmstrong/swig.git",
+    "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
+    "dependencies": {
+        "nodelint": "0.5.0",
+        "nodeunit": "0.5.3"
+    },
+    "main": "index",
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "scripts": {
+        "prepublish": "npm prune",
+        "test": "make lint && make test"
+    }
+}
