@@ -1,39 +1,42 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Swig Template Engine for Node.js</title>
+    <meta charset="utf-8">
+    <title>Swig JavaScript Template Engine</title>
 
-    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    <link rel="stylesheet" href="styles.css" media="all">
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Swig</h1>
-        <p>A Node.js Template Engine</p>
+        <p>A JavaScript &amp; Node.js Template Engine</p>
         <a id="github" href="https://github.com/paularmstrong/swig"><span>Fork me on GitHub</span> <span>Over 9000 Karma</span></a>
     </header>
 
     <section>
-        <p>Swig is a template engine inspired by the Django syntax. It has a few extensions and the templates are compiled to native javascript functions which make them really fast. For now it's synchronous, but once a template is read and compiled, it is cached in memory.</p>
+        <p>Swig is a JavaScript template engine inspired by Django, Jinja, and Twig template languages. It is fast, easy, full-featured, and extendable.</p>
 
         <h2>Features</h2>
-        <ul>
-            <li>Incredibly <i><a href="http://paularmstrong.github.com/node-templates/#benchmarks">fast</a>!</i></li>
-            <li><a href="http://expressjs.com">Express</a> compatible.</li>
+        <ul class="features">
             <li>Object-Oriented template inheritance.</li>
             <li>Apply filters and transformations to output in your templates.</li>
             <li>Automatically escapes all output.</li>
             <li>Lots of iteration and conditionals supported.</li>
             <li>Extendable and customizable.</li>
+            <li><a href="http://expressjs.com">Express</a> compatible.</li>
         </ul>
+    </section>
 
+    <section>
         <h2>Installation</h2>
 
         <p>Swig is available via npm.</p>
 
         <pre><code>npm install swig</code></pre>
+    </section>
 
+    <section>
         <h2>Documentation</h2>
         <p>All documentation can be <a href="https://github.com/paularmstrong/swig/tree/master/docs">viewed online in the repository</a>.</p>
     </section>

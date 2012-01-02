@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
-
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,img,input,textarea,p,blockquote,table,th,td,a,abbr,address,caption,cite,code,dfn,em,strong,th,var,hr,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,mark{margin:0;padding:0;background:transparent;border:0;border-collapse:collapse;border-spacing:0;line-height:inherit;font-style:inherit;font-weight:inherit;text-decoration:inherit;text-align:left;list-style:none;quotes:none;}
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
 input:focus,a:focus,textarea:focus{outline:0;}
@@ -44,28 +42,40 @@ html,body,textarea,legend{font:16px/1.4em Helvetica,Arial,Verdana,sans-serif;col
 
 html,
 body {
-	max-width: 1200px;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 html {
-    background: #EEE url(images/head.jpg) center 0 repeat-x;
+    background: #EEE;
 }
 
 body {
-	margin: 20px;
     background: transparent;
 }
 
-section {
+header,
+section,
+footer {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+body > section {
     margin: 0 0 48px;
+    padding-top: 40px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(20px, #EEE));
+    background-image: -webkit-linear-gradient(top, #F5F5F5 0, #EEE 20px);
+    background-image: -moz-linear-gradient(top, #F5F5F5 0, #EEE 20%);
+    background-image: -ms-linear-gradient(top, #F5F5F5 0, #EEE 20%);
+    background-image: -o-linear-gradient(top, #F5F5F5 0, #EEE 20%);
+    background-image: linear-gradient(top, #F5F5F5 0, #EEE 20px);
 }
 
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Hammersmith One', sans-serif;
+    font-weight: bold;
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 	margin: 0 0 0.2em;
 }
@@ -135,6 +145,34 @@ a:link {
     a:hover {
         background-color: #527DF6;
         color: #DDD;
+    }
+
+
+.header {
+    background: #222;
+    color: #EEE;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(20px, #222));
+    background-image: -webkit-linear-gradient(bottom, #111 0, #222 20px);
+    background-image: -moz-linear-gradient(bottom, #111 0, #222 20px);
+    background-image: -ms-linear-gradient(bottom, #111 0, #222 20px);
+    background-image: -o-linear-gradient(bottom, #111 0, #222 20px);
+    background-image: linear-gradient(bottom, #111 0, #222 20px);
+}
+
+#input {
+    background: #444;
+}
+
+.features > li {
+    list-style-type: none;
+
+}
+    .features > li:before {
+        content: '✔';
+        position: relative;
+        left: -5px;
     }
 
 #github {
