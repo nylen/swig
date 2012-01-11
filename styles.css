@@ -58,6 +58,7 @@ section,
 footer {
     padding-right: 15%;
     padding-left: 15%;
+    position: relative;
 }
 
 body > section {
@@ -153,6 +154,7 @@ a:link {
     color: #EEE;
     padding-top: 100px;
     padding-bottom: 100px;
+    background: #222;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(20px, #222));
     background-image: -webkit-linear-gradient(bottom, #111 0, #222 20px);
     background-image: -moz-linear-gradient(bottom, #111 0, #222 20px);
@@ -161,8 +163,42 @@ a:link {
     background-image: linear-gradient(bottom, #111 0, #222 20px);
 }
 
-#input {
-    background: #444;
+.header pre {
+    font-size: 14px;
+    position: absolute;
+    top: 140px;
+    right: 15%;
+    padding: 20px;
+    background: #181818;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    width: 35%;
+    overflow: scroll;
+}
+
+@media all and (max-width: 960px) {
+    .header pre {
+        position: static;
+        width: auto;
+    }
+}
+@media all and (max-width: 480px) {
+    header,
+    section,
+    footer {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .header pre {
+        font-size: 11px;
+    }
 }
 
 .features > li {
